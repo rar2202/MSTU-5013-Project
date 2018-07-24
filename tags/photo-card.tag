@@ -1,5 +1,5 @@
 <photo-card>
-  <img src="imageURL"/>
+  <img src= { <imageURL>  }</imageURL>/>
 
   <script>
     this.imageURL="http://placehold.it/100x100";

@@ -1,5 +1,5 @@
-<title-heading>
-  <p>Testing!</p>
+<app>
+  <p>Testing TEST 123</p>
 
   <script>
     console.log("TEST");
@@ -7,8 +7,8 @@
 
   <style>
     :scope {
-      color: purple;
+      color: blue;
+      font-family:  'Sofia';
     }
   </style>
-
-</title-heading>
+</app>

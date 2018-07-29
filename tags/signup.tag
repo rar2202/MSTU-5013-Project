@@ -1,26 +1,28 @@
 <signup>
   <h1>Registration:</h1>
-  <p>Complete the forms below to register for an account.</p>
+  <p>Complete the forms below to register for e-mail updates.</p>
 
-<form action={ actionPage }>
-  First name: <br>
-  <input type="text" name="firstname" value=""><br>
+<div class="card">
+  <div class="card-body">
+    <form action={ actionPage }>
+      <p>First name:<input type="text" name="firstname" value=""></p>
 
-  Last name: <br>
-  <input type="text" name="lastname" value=""><br>
 
-  Phone: <br>
-  <input type="text" name="phone" value="">
-  <select>
-    <option value="Home">Home</option>
-    <option value="Cell">Cell</option>
-  </select><br>
-  E-Mail: <br>
-  <input type="text" name="email" value=""><br>
+      <p>Last name:<input type="text" name="lastname" value=""></p>
 
-  <input type="submit" value="Submit">
-  <input type="reset">
-</form>
+      <p>Phone:  <input type="text" name="phone" value="">
+        <select>
+          <option value="Home">Home</option>
+          <option value="Cell">Cell</option>
+        </select></p>
+
+      <p>E-Mail:<input type="text" name="email" value=""><p>
+
+      <input type="submit" value="Submit">
+      <input type="reset">
+    </form>
+  </div>
+</div>
 
 
 
@@ -31,7 +33,6 @@
 
   <style>
     :scope {
-      color: blue;
       font-family:  'Gaegu';
     }
 

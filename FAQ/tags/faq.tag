@@ -40,35 +40,28 @@
   
   <!--New Question--> 
   
-  <h3> New Question </h3> 
+  <h3> Add Your Own Question </h3> 
   
   <div class="container black-border">
   
-    <h5> Question #3 </h5>
+    <h5> Please use form below to write your question. </h5>
     
-    <questions><questions>
+    <input type="text" value="" placeholder="Write question here" onchange={ updateQuestion } ref="newQuestion">
+    
+    <button type="button" onclick={ toggleQuestion }> Submit </button> 
+  
+    <p>
+    <br>
+    { question ? "New Question: " : "No Question" }
+    <br>
+    { newQuestion }
+    </p> 
+    <br>
   
   </div>
   
-  <!--Input New Question--> 
-  
-  <h3> Add Your Own Question </h3>
-  
-  <p> Question
-    <input type="text" placeholder="Type question here">
-    <button type="button">Submit</button>
-  </p>
-  
-  <p> Answer 
-    <input type="text" ref="questionRef" placeholder="Type answer here">
-    <button type="button" onclick={ question }>Submit</button> 
-  </p>
-  
   <script>
-  
-  // this.question = function(event) {
-  //  this.
-  //   }
+  var that = this;
   
   <!--Question One--> 
     
@@ -106,7 +99,20 @@
       this.disapprovalNumber2 = 0;
       this.approvalNumber2 = 0;
     };
-
+    
+    <!--New Question-->
+    this.question = false;
+    this.newQuestion = ""
+    
+    this.toggleQuestion = function(event){
+      this.question = !this.question;
+    };
+    
+    this.updateQuestion = function(event){
+      this.newQuestion = this.refs.newQuestion.value;
+    };
+    
+  
   </script>
 
   <style>
@@ -122,6 +128,10 @@
       padding: 10px;
       margin: 10px;
       background-color: #FFFFE0;
+    }
+    
+    .answer-listing {
+      margin-top: 15px;
     }
 
   </style>

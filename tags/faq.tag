@@ -18,6 +18,24 @@
 
   </div>
 
+
+  <div class="container">
+    <section class="card mb-5 border-dark" style="background: #ADD8E6" id="question1">
+      <div class="card-body">
+        <h3 class="card-title"> Question #1 </h3>
+        <h5 class="card-subtitle"><b>"Where can I go to find my student's homework assignments?"</b><h5>
+        <p class="card-text"> <i> You can go to the teacher's webpage on the district site.  </i> </p>
+        <h6 class="card-text"> Was this answer helpful? </h6>
+
+        <button type="button" class="card-btn btn-success" onclick={ increaseNumber }>Like</button>
+        <button type="button" class="card-btn btn-danger" onclick={ decreaseNumber }>Dislike</button>
+        <button type="button" class="card-btn btn-primary" onclick={ reset }>Reset</button>
+
+        <p class="card-text"> Likes = { approvalNumber } Dislikes = { disapprovalNumber } </p>
+      </div>
+    </section>
+  </div>
+
   <!-- Question Two -->
 
   <div class="container black-border">
@@ -124,7 +142,7 @@
       border: 2px solid #000000;
       padding: 10px;
       margin: 10px;
-      background-color: #FFFFE0;
+      background-color: #ADD8E6;
     }
 
     .answer-listing {

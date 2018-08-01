@@ -1,6 +1,5 @@
 <signup>
-  <h1>Registration:</h1>
-  <p>Complete the forms below to register for e-mail updates.</p>
+  <h2>Complete the form below to register for e-mail updates.</h2>
 
 <div class="card">
   <div class="card-body">

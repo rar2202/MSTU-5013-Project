@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Project Work</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Chela+One|Gaegu|Sofia" rel="stylesheet">
+</head>
+
+<body>
+
+<img class="img-fluid" src="https://az616578.vo.msecnd.net/files/2016/11/23/636154731398800060-2119844250_math.jpg" alt="Welcome">
+
+<nav class="navbar bg-dark navbar-dark navbar-expand-sm fixed-top">
+  <div class="container">
+    <a class="navbar-brand d-sm-inline-block" href="https://www.tc.columbia.edu/">TC MSTU 5013</a>
+
+    <button class="navbar-toggler" type="button"
+      data-toggle="collapse" data-target="#myTogglerNav"
+      aria-controls="myTogglerNav"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="myTogglerNav">
+      <div class="navbar-nav ml-sm-auto">
+        <a class="nav-item nav-link" href="index.html">Home</a>
+
+        <div class="dropdown">
+
+          <a class="nav-item nav-link dropdown-toggle"
+          data-toggle="dropdown" id="unitsDropdown"
+          aria-haspopup="true" aria-expanded="false" href="#">Units</a>
+
+          <div class="dropdown-menu" aria-labelledby="unitsDropdown">
+              <a class="dropdown-item" href="#">Number Sense</a>
+              <a class="dropdown-item" href="#">Multiplication</a>
+              <a class="dropdown-item" href="#">Division</a>
+              <a class="dropdown-item" href="#">Fractions</a>
+              <a class="dropdown-item" href="#">Decimals</a>
+              <a class="dropdown-item" href="Geometry.html">Geometry</a>
+              <a class="dropdown-item" href="#">Patterns & Algebra</a>
+          </div>
+        </div>
+
+        <a class="nav-item nav-link active" href="FAQ.html">FAQ</a>
+        <a class="nav-item nav-link" href="#">Contact</a>
+
+        <form class="form-inline">
+          <input class="form-control mr-2" type="text" placeholder="Search">
+          <button class="btn btn-outline-light" type="submit">Go</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!--Header-->
+<header class="jumbotron jumbotron-fluid title">
+  <div class="container">
+    <h1 class="h1-font">Frequently Asked Questions</h1>
+  </div>
+</header>
+
+<div class="container">
+  <div row="col-12">
+    <faq></faq>
+  </div>
+</div>
+
+  <script src="tags/faq.tag" type="riot/tag"></script>
+
+  <script src="https://cdn.jsdelivr.net/riot/3.1.0/riot+compiler.js"></script>
+
+  <script>
+    riot.mount('*');
+  </script>
+
+  <style>
+    :scope {
+      padding: 20px;
+      background-color: #ADD8E6;
+    }
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/riot@3.11/riot+compiler.js"></script>
+
+  <script>
+    riot.mount('*');
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+
+</body>
+</html>

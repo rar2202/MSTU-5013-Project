@@ -1,6 +1,10 @@
 # MSTU 5013 Project
 By: Becca Rosenberg and Mary Babin
 
-Description: An app that is designed for parents of students to understand better what their children are learning in school. This application will allow teachers to publish homework and notify parents via e-mail.  Additionally, parents will use the application to understand the concepts and skills within the homework so they are better able to support their child at home when needed. Parents will be able to send their child's teacher a question directly about that homework assignment so that all questions and answers can be made available for other parents as well.
+ Description: A "teacher-maintained" website that is designed for students and parents to better understand concepts that their children are learning in school. The website has three main objectives:
+ 
+ 1) To provide information, practice problems, and helpful links for students and parents for each math unit.
 
-NEW Description: An app that is designed for students and parents to better understand concepts that the children are learning in school. The app is designed to appear similar to a game structure, and it will double not only in helping the child with the content and skills being learned in class, but also in how the child will be expected to interact with state-wide testing. Therefore, the child will be more comfortable when they go to take the test, and they will be more comfortable with their knowledge of class content and skills. Further, parents will be able to interact with a FAQ section where they can look up frequently asked questions, as well as ask their own. 
+ 2) To help children become comfortable with the types of questions they will be expected to interact with during state-wide computer-based standardized testing. Practice questions will be formatted using a game-like structure so children are exposed to academic content while also having fun.
+
+ 3) To provide parents with an FAQ resource where they can look up frequently asked questions, as well as ask their own.

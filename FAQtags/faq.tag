@@ -6,58 +6,70 @@
   
   <!-- Question One --> 
   
-  <div class="container black-border"> 
-  
-    <h5> Question #1 </h5>
-    <p> "Where can I go to find my student's homework assignments?"<p>
-    <p> <i> You can go to the teacher's webpage on the district site.  </i> </p>
-    <h6> Was this answer helpful? </h6>
-    
-    <button type="button" class="btn-success" onclick={ increaseNumber }>Like</button>
-    <button type="button" class="btn-danger" onclick={ decreaseNumber }>Dislike</button>
-    <button type="button" class="btn-primary" onclick={ reset }>Reset</button>
-  
-    <p> Likes = { approvalNumber } Dislikes = { disapprovalNumber } </p>
-  
-  </div> 
+  <div class="container">
+    <section class="card mb-5 border-dark bg-white" id="question1">
+      <div class="card-body">
+        <h3 class="card-title"> Question #1 </h3>
+        <h5 class="card-subtitle"><b>"Where can I go to find my student's homework assignments?"</b><h5>
+        <p class="card-text"> <i> You can go to the teacher's webpage on the district site.  </i> </p>
+        
+        <div class="card-footer">
+          <h5 class="card-text"> Was this answer helpful? </h5>
+
+          <button type="button" class="card-btn btn-success" onclick={ increaseNumber }>Like</button>
+          <button type="button" class="card-btn btn-danger" onclick={ decreaseNumber }>Dislike</button>
+          <button type="button" class="card-btn btn-primary" onclick={ reset }>Reset</button>
+
+          <p class="card-text"> Likes = { approvalNumber } Dislikes = { disapprovalNumber } </p>
+        </div>
+      </div>
+    </section>
+  </div>
   
   <!-- Question Two --> 
   
-  <div class="container black-border"> 
-  
-    <h5> Question #2 </h5>
-    <p> "How will this help my student with state testing?"<p>
-    <p> <i> While using this game, the student will not only be engaging in content that may be included on the state-wide exam, but they will also be practicing how to answer questions that will appear on the exam.  </i> </p>
-    <h6> Was this answer helpful? </h6>
+  <div class="container"> 
+    <section class="card mb-5 border-dark bg-white" id="question2">
+      <div class="card-body">
+        <h3 class="card-title"> Question #2 </h3>
+        <h5 class="card-subtitle"><b> "How will this help my student with state testing?"<b><h5>
+        <p class="card-text"> <i> While using this game, the student will not only be engaging in content that may be included on the state-wide exam, but they will also be practicing how to answer questions that will appear on the exam.  </i> </p>
+        
+        <div class="card-footer">
+          <h5> Was this answer helpful? </h5>
     
-    <button type="button" class="btn-success" onclick={ increaseNumber2 }>Like</button>
-    <button type="button" class="btn-danger" onclick={ decreaseNumber2 }>Dislike</button>
-    <button type="button" class="btn-primary" onclick={ reset2 }>Reset</button>
+          <button type="button" class="card-btn btn-success" onclick={ increaseNumber2 }>Like</button>
+          <button type="button" class="card-btn btn-danger" onclick={ decreaseNumber2 }>Dislike</button>
+          <button type="button" class="card-btn btn-primary" onclick={ reset2 }>Reset</button>
   
-    <p> Likes = { approvalNumber2 } Dislikes = { disapprovalNumber2 } </p>
-  
+          <p class="card-text"> Likes = { approvalNumber2 } Dislikes = { disapprovalNumber2 } </p>
+        </div>
+      </div> 
+    </section>
   </div> 
   
   <!--New Question--> 
   
   <h3> Add Your Own Question </h3> 
   
-  <div class="container black-border">
-  
-    <h5> Please use form below to write your question. </h5>
+  <div class="container">
+    <section class="card mb-5 border-dark bg-white" id="newquestion">
+      <div class="card-body"
+        <h5 class="card-title"> Please use form below to write your question. </h5>
     
-    <input type="text" value="" placeholder="Write question here" onchange={ updateQuestion } ref="newQuestion">
+        <input type="text" value="" placeholder="Write question here" onchange={ updateQuestion } ref="newQuestion">
     
-    <button type="button" onclick={ toggleQuestion }> Submit </button> 
+        <button type="button" class="card-btn btn-secondary" onclick={ toggleQuestion }> Submit </button> 
   
-    <p>
-    <br>
-    { question ? "New Question: " : "No Question" }
-    <br>
-    { newQuestion }
-    </p> 
-    <br>
-  
+        <p class="class-text">
+        <br>
+        { question ? "New Question: " : "No Question" }
+        <br>
+        { newQuestion }
+        </p> 
+        <br>
+      </div>
+    </section>  
   </div>
   
   <script>
@@ -127,7 +139,7 @@
       border: 2px solid #000000;
       padding: 10px;
       margin: 10px;
-      background-color: #FFFFE0;
+      background-color: #ADD8E6;
     }
     
     .answer-listing {

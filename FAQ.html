@@ -9,6 +9,53 @@
 </head>
 <body>
 
+  <nav class="navbar bg-dark navbar-dark navbar-expand-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-sm-inline-block" href="https://www.tc.columbia.edu/">Teachers College
+      <img src="images/kingscrown.png" style="width: 25px;" alt="Columbia Logo">
+      </a>
+
+      <button class="navbar-toggler" type="button"
+        data-toggle="collapse" data-target="#myTogglerNav"
+        aria-controls="myTogglerNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="myTogglerNav">
+        <div class="navbar-nav ml-sm-auto">
+          <a class="nav-item nav-link" href="index.html">Home</a>
+          <a class="nav-item nav-link" href="Registration.html">Registration</a>
+
+          <div class="dropdown">
+
+            <a class="nav-item nav-link dropdown-toggle"
+            data-toggle="dropdown" id="unitsDropdown"
+            aria-haspopup="true" aria-expanded="false" href="#">Units</a>
+
+            <div class="dropdown-menu" aria-labelledby="unitsDropdown">
+                <a class="dropdown-item" href="#">Number Sense</a>
+                <a class="dropdown-item" href="#">Multiplication</a>
+                <a class="dropdown-item" href="#">Division</a>
+                <a class="dropdown-item" href="#">Fractions</a>
+                <a class="dropdown-item" href="#">Decimals</a>
+                <a class="dropdown-item active" href="#">Geometry</a>
+                <a class="dropdown-item" href="#">Patterns & Algebra</a>
+            </div>
+          </div>
+
+          <a class="nav-item nav-link" href="FAQ.html">FAQ</a>
+          <a class="nav-item nav-link" href="#">Contact</a>
+
+          <form class="form-inline">
+            <input class="form-control mr-2" type="text" placeholder="Search">
+            <button class="btn btn-outline-light" type="submit">Go</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+
   <faq></faq>
 
   <script src="FAQtags/faq.tag" type="riot/tag"></script>

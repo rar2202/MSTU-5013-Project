@@ -10,9 +10,6 @@
 </head>
 
 <body>
-
-<img class="img-fluid" src="https://az616578.vo.msecnd.net/files/2016/11/23/636154731398800060-2119844250_math.jpg" alt="Welcome">
-
 <nav class="navbar bg-dark navbar-dark navbar-expand-sm fixed-top">
   <div class="container">
     <a class="navbar-brand d-sm-inline-block" href="https://www.tc.columbia.edu/">TC MSTU 5013</a>
@@ -59,8 +56,9 @@
 </nav>
 
 <!--Header-->
-<header class="jumbotron jumbotron-fluid title">
+<header class="jumbotron title mt-5">
   <div class="container">
+    <br>
     <h1 class="h1-font">Geometry</h1>
   </div>
 </header>
@@ -68,7 +66,123 @@
 <!--Body-->
 
 <div class="container">
+  <div row="col=12">
+    <h2>Two-Dimensional Shapes</h2>
+    <div class="card">
+      <div class="card-header">
+        <ul class="nav nav-pills" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#poly" role="tab" aria-controls="poly" aria-selected="true">Polygons</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#regular" role="tab" aria-controls="regular" aria-selected="false">Regular</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#irregular" role="tab" aria-controls="irregular" aria-selected="false">Irregular</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="polyvideo-tab" data-toggle="tab" href="#polyvideo" role="tab" aria-controls="polyvideo" aria-selected="false">Polygon Video</a>
+          </li>
+        </ul>
+      </div>
+      <div class="card-body">
+        <div class="tab-content" id="myTabContent">
+
+          <div class="tab-pane fade show active" id="poly" role="tabpanel" aria-labelledby="poly-tab">
+            <p class="card-text">A <u>polygon</u> is a closed, plane figure with at least three straight sides and angles.</p>
+            <img src="https://lh3.googleusercontent.com/JSuMPXHnj_ZCDKO90lSgL5MVS4oIMXE_UwNRazxDRz4xYRz8WjViaXAaJkTHvs6ZL5KwwoNyuCxP2cr8NcMM68_S5h_RIc6TBrP8lY1ysipiJrrpdSktHnx7OwjatJh0Soff45At=w2400" alt="Not Polygons" class="card-img img-responsive">
+          </div>
+
+          <div class="tab-pane fade" id="regular" role="tabpanel" aria-labelledby="regular-tab">
+            <p class="card-text">A <u>regular polygon</u> is a closed, plane figure with at least three straight sides and angles. All sides and all angles are
+              <button class="btn btn-outline-success" data-toggle="collapse" data-target="#congruent" aria-expanded="Link to Congruent">congruent</button>.
+              <div id="congruent" class="collapse">
+                <p class="smaller-font"><u>Congruent:</u> Figures that are the same; identical.  Sides are congruent when they are the same length. Angles are congruent when they are the same measure of degrees.</p>
+              </div>
+              <div>
+                <img src="https://lh3.googleusercontent.com/_wz2oMh7dJo1redlaqeWUthxfYETiiF3xFNKxv3C1BTW0KEyLdJAgIoADnfo7690AJmq2SaBFWcc58W4SfYwz31N_Xu3UZRIEQWhs9aq8LGibzs31rKtB_c5_xjtAUWHlfacUgv6=w2400" alt="Regular Polygons" class="card-img img-responsive">
+              </div>
+            </p>
+          </div>
+
+          <div class="tab-pane fade" id="irregular" role="tabpanel" aria-labelledby="irregular-tab">
+            <p class="card-text">An <u>irregular polygon</u> is a closed, plane figure with at least three straight sides and angles. Not all sides and angles are congruent.</p>
+            <div>
+              <img src="https://lh3.googleusercontent.com/H486vF3HH6nezLA6-wmHo3mX2BEoSbG3eoELSEj6PY0LddRQe1gGdjwHGDxEHiYCXqLZlVUVoVvKEqnXtUOA67ATUhiCDp7p_IZY77hnkL3V1j6dSyZcJ7GYB08TLCaGIMm2elrc=w2400" alt="Irregular Polygons" class="card-img img-responsive">
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="polyvideo" role="tabpanel" aria-labelledby="polyvideo-tab">
+            <p class="card-text">Watch the video below to find out more about regular and irregular polygons!</p>
+            <iframe src="https://www.youtube.com/embed/UeKN5-ogFTs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<div class="container">
   <div row="col-12">
+    <h2>Types of Polygons</h2>
+    <div id="geometrysubjects" role="tablist" aria-multiselectable="true">
+
+      <div class="card">
+          <div class="card-header" role="tab" id="trianglesheading">
+            <h3 class="mb-0">
+              <a data-toggle="collapse" data-parent="geometrysubjects" href="#triangles" area-expanded="true"
+              aria-controls="triangles">Triangles</a>
+            </h3>
+          </div>
+          <div id="triangles" class="collapse show"
+            role="tabpanel" aria-labelledby="trianglesheading">
+            <div class="card-block">
+              <p class="card-body card-text">Text text text</p>
+            </div>
+          </div>
+      </div>
+
+      <div class="card">
+          <div class="card-header" role="tab" id="quadrilateralsheading">
+            <h3 class="mb-0">
+              <a data-toggle="collapse" data-parent="geometrysubjects" href="#quadrilaterals" area-expanded="true"
+              aria-controls="quadrilaterals">Quadrilaterals</a>
+            </h3>
+          </div>
+          <div id="quadrilaterals" class="collapse"
+            role="tabpanel" aria-labelledby="quadrilateralsheading">
+            <div class="card-block">
+              <p class="card-body card-text">Text text text</p>
+            </div>
+          </div>
+      </div>
+
+      <div class="card">
+          <div class="card-header" role="tab" id="pentagonheading">
+            <h3 class="mb-0">
+              <a data-toggle="collapse" data-parent="geometrysubjects" href="#pentagons" area-expanded="false"
+              aria-controls="pentagons">Pentagons</a>
+            </h3>
+          </div>
+          <div id="pentagons" class="collapse"
+            role="tabpanel" aria-labelledby="pentagonheading">
+            <div class="card-block card-body">
+              <p class="card-text">Text text text</p>
+            </div>
+          </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<br>
+
+<div class="container">
+  <div row="col-12">
+    <h2>Practice Questions</h2>
     <drag-drop></drag-drop>
   </div>
 </div>

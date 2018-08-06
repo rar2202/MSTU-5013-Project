@@ -5,8 +5,8 @@ body {
 }
 
 .jumbotron {
-  color: ##ABB2B9;
-  background-color: #D5D8DC;
+  color: #FFFFFF;
+  background-image: url("https://i.pinimg.com/originals/d6/ec/92/d6ec92b660388f516970c6123bb39b84.png");
 }
 
 .title {
@@ -16,4 +16,10 @@ body {
 .h1-font {
   font-size:  60px;
   font-family: 'Sofia';
+}
+
+
+.smaller-font {
+  font-size: 15px;
+  font-family: 'Gaegu', cursive;
 }

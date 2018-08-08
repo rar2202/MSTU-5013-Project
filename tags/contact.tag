@@ -22,7 +22,6 @@
     </div>
   </div>
 
-
     <script>
       console.log('Submit', this);
     </script>

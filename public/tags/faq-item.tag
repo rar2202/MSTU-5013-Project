@@ -1,7 +1,7 @@
-<question>
+<faq-item>
 
   <div class="container">
-    <section class="card mb-5 border-dark bg-white" id="question1">
+    <section class="card mb-5 border-dark bg-light" id="question1">
       <div class="card-body">
         <h3 class="card-title"> Question #{ qNum } </h3>
         <h5 class="card-subtitle"><b> "{ question }" </b><h5>
@@ -44,4 +44,4 @@ this.reset = function(event) {
 :scope {}
 </style>
 
-</question>
+</faq-item>

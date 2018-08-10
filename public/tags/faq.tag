@@ -1,119 +1,134 @@
 <faq>
-  <h1><strong>Frequently Asked Questions</strong></h1>
+
+  <h2> <center> Most Frequently Asked <center> </h2>
+
+  <faq-item each={ data }> </faq-item>
 
   <!-- Question One -->
 
-  <div class="container black-border">
-
-    <h5> Question #1 </h5>
-    <p> "Where can I go to find my student's homework assignments?"<p>
-    <p> <i> You can go to the teacher's webpage on the district site.  </i> </p>
-    <h6> Was this answer helpful? </h6>
-
-    <button type="button" class="btn-success" onclick={ increaseNumber }>Like</button>
-    <button type="button" class="btn-danger" onclick={ decreaseNumber }>Dislike</button>
-    <button type="button" class="btn-primary" onclick={ reset }>Reset</button>
-
-    <p> Likes = { approvalNumber } Dislikes = { disapprovalNumber } </p>
-
-  </div>
-
-
-  <div class="container">
-    <section class="card mb-5 border-dark" style="background: #ADD8E6" id="question1">
+  <!-- <div class="container">
+    <section class="card mb-5 border-dark bg-white" id="question1">
       <div class="card-body">
         <h3 class="card-title"> Question #1 </h3>
         <h5 class="card-subtitle"><b>"Where can I go to find my student's homework assignments?"</b><h5>
-        <p class="card-text"> <i> You can go to the teacher's webpage on the district site.  </i> </p>
-        <h6 class="card-text"> Was this answer helpful? </h6>
+        <p class="card-text answer"> You can go to the teacher's webpage on the district site. </p>
 
-        <button type="button" class="card-btn btn-success" onclick={ increaseNumber }>Like</button>
-        <button type="button" class="card-btn btn-danger" onclick={ decreaseNumber }>Dislike</button>
-        <button type="button" class="card-btn btn-primary" onclick={ reset }>Reset</button>
+        <div class="card-footer">
+          <h5 class="card-text"> Was this answer helpful? </h5>
 
-        <p class="card-text"> Likes = { approvalNumber } Dislikes = { disapprovalNumber } </p>
+          <button type="button" class="card-btn btn-success" onclick={ increaseNumber }>Like</button>
+          <button type="button" class="card-btn btn-danger" onclick={ decreaseNumber }>Dislike</button>
+          <button type="button" class="card-btn btn-primary" onclick={ reset }>Reset</button>
+
+          <p class="card-text"> Likes = { approvalNumber } Dislikes = { disapprovalNumber } </p>
+        </div>
       </div>
     </section>
-  </div>
+  </div> -->
 
   <!-- Question Two -->
 
-  <div class="container black-border">
+  <!-- <div class="container"> -->
+    <!-- <section class="card mb-5 border-dark bg-white" id="question2"> -->
+      <!-- <div class="card-body"> -->
+        <!-- <h3 class="card-title"> Question #2 </h3> -->
+        <!-- <h5 class="card-subtitle"><b> "How will this help my student with state testing?"<b><h5> -->
+        <!-- <p class="card-text answer"> While using this game, the student will not only be engaging in content that may be included on the state-wide exam, but they will also be practicing how to answer questions that will appear on the exam.  </p>
 
-    <h5> Question #2 </h5>
-    <p> "How will this help my student with state testing?"<p>
-    <p> <i> While using this game, the student will not only be engaging in content that may be included on the state-wide exam, but they will also be practicing how to answer questions that will appear on the exam.  </i> </p>
-    <h6> Was this answer helpful? </h6>
+        <div class="card-footer">
+          <h5> Was this answer helpful? </h5>
 
-    <button type="button" class="btn-success" onclick={ increaseNumber2 }>Like</button>
-    <button type="button" class="btn-danger" onclick={ decreaseNumber2 }>Dislike</button>
-    <button type="button" class="btn-primary" onclick={ reset2 }>Reset</button>
+          <button type="button" class="card-btn btn-success" onclick={ increaseNumber2 }>Like</button>
+          <button type="button" class="card-btn btn-danger" onclick={ decreaseNumber2 }>Dislike</button>
+          <button type="button" class="card-btn btn-primary" onclick={ reset2 }>Reset</button>
 
-    <p> Likes = { approvalNumber2 } Dislikes = { disapprovalNumber2 } </p>
-
-  </div>
+          <p class="card-text"> Likes = { approvalNumber2 } Dislikes = { disapprovalNumber2 } </p>
+        </div>
+      </div>
+    </section>
+  </div> -->
 
   <!--New Question-->
 
-  <h3> Add Your Own Question </h3>
+  <h2> <center> Add Your Own Question <center> </h2>
 
-  <div class="container black-border">
+    <question> </question>
 
-    <h5> Please use form below to write your question. </h5>
+  <!-- <div class="container">
+    <section class="card mb-5 border-dark bg-light" id="newquestion">
+      <div class="card-body"
+        <h5 class="card-title"> Please use form below to write your question. </h5>
 
-    <input type="text" value="" placeholder="Write question here" onchange={ updateQuestion } ref="newQuestion">
+        <input type="text" value="" placeholder="Write question here" onchange={ updateQuestion } ref="newQuestion">
 
-    <button type="button" onclick={ toggleQuestion }> Submit </button>
+        <button type="button" class="card-btn btn-secondary" onclick={ toggleQuestion }> Submit </button>
 
-    <p>
-    <br>
-    { question ? "New Question: " : "No Question" }
-    <br>
-    { newQuestion }
-    </p>
-    <br>
-
-  </div>
+        <p class="class-text">
+        <br>
+        { question ? "New Question: " : "No Question" }
+        <br>
+        { newQuestion }
+        </p>
+        <br>
+      </div>
+    </section>
+  </div> -->
 
   <script>
+
+this.data = [{
+  question: "Where can I go to find my student's homework assignments?",
+  answer: "You can go to the teacher's webpage on the district site.",
+  likes: 0,
+  dislikes: 0,
+  qNum: 1
+}, {
+  question: "How will this help my student with state testing?",
+  answer: "While using this game, the student will not only be engaging in content that may be included on the state-wide exam, but they will also be practicing how to answer questions that will appear on the exam.",
+  likes: 0,
+  dislikes: 0,
+  qNum: 2
+}];
+
+
   var that = this;
 
   <!--Question One-->
 
-    this.approvalNumber = 0;
-    this.disapprovalNumber = 0;
+//    this.approvalNumber = 0;
+//    this.disapprovalNumber = 0;
 
-    this.increaseNumber = function(event){
-      this.approvalNumber++;
-    };
+//    this.increaseNumber = function(event){
+//      this.approvalNumber++;
+//    };
 
-    this.decreaseNumber = function(event){
-      this.disapprovalNumber++;
-    };
+//    this.decreaseNumber = function(event){
+//      this.disapprovalNumber++;
+//    };
 
-    this.reset = function(event) {
-      this.disapprovalNumber = 0;
-      this.approvalNumber = 0;
-    };
+//    this.reset = function(event) {
+//      this.disapprovalNumber = 0;
+//      this.approvalNumber = 0;
+//    };
 
 
     <!--Question Two-->
 
-    this.approvalNumber2 = 0;
-    this.disapprovalNumber2 = 0;
+//    this.approvalNumber2 = 0;
+//    this.disapprovalNumber2 = 0;
 
-    this.increaseNumber2 = function(event){
-      this.approvalNumber2++;
-    };
+//    this.increaseNumber2 = function(event){
+//      this.approvalNumber2++;
+//    };
 
-    this.decreaseNumber2 = function(event){
-      this.disapprovalNumber2++;
-    };
+//    this.decreaseNumber2 = function(event){
+//      this.disapprovalNumber2++;
+//    };
 
-    this.reset2 = function(event) {
-      this.disapprovalNumber2 = 0;
-      this.approvalNumber2 = 0;
-    };
+//    this.reset2 = function(event) {
+//      this.disapprovalNumber2 = 0;
+//      this.approvalNumber2 = 0;
+//    };
 
     <!--New Question-->
     this.question = false;
@@ -132,9 +147,9 @@
 
   <style>
     :scope {
-      display: block;
-      padding: 20px;
-      background-color: #ADD8E6;
+      /* display: block; */
+      /* padding: 70px;
+      background-color: #ADD8E6; */
       font-family: 'Gaegu', cursive;
     }
 
@@ -147,6 +162,10 @@
 
     .answer-listing {
       margin-top: 15px;
+    }
+
+    .answer {
+      font-style: italic;
     }
 
   </style>

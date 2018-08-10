@@ -33,6 +33,19 @@
     this.newQuestion = this.refs.newQuestion.value;
   };
 
+  this.updateQuestion = function(event) {
+
+    var database = firebase.database();
+
+    var newQuestion = this.refs.newQuestion.value; // get from input
+
+    var registrationRef = database.ref('Questions');
+
+    registrationRef.push({
+      NewQuestion: newQuestion,
+    });
+}
+
 
   </script>
 

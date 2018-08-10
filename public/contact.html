@@ -45,7 +45,7 @@
         </div>
 
         <a class="nav-item nav-link" href="FAQ.html">FAQ</a>
-        <a class="nav-item nav-link" href="contact.html">Contact</a>
+        <a class="nav-item nav-link" href="#">Contact</a>
 
         <form class="form-inline">
           <input class="form-control mr-2" type="text" placeholder="Search">
@@ -60,7 +60,7 @@
 <header class="jumbotron title mt-5">
   <div class="container">
     <br>
-    <h1 class="h1-font">Welcome</h1>
+    <h1 class="h1-font">Contact</h1>
   </div>
 </header>
 
@@ -68,15 +68,14 @@
 
 <div class="container">
   <div row="col-12">
-    <h2> Homepage information... to be updated </h2>
+    <contact></contact>
   </div>
 </div>
 
 <br><br>
 
 
-  <script src="./tags/drag-drop.tag" type="riot/tag"></script>
-  <script src="./tags/signup.tag" type="riot/tag"></script>
+  <script src="./tags/contact.tag" type="riot/tag"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/riot@3.11/riot+compiler.js"></script>
 
@@ -87,6 +86,20 @@
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+
+  <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyAAXUldEFIOdBgO2FV6cuq0QTM5kGGXylA",
+      authDomain: "mstu5013project2018.firebaseapp.com",
+      databaseURL: "https://mstu5013project2018.firebaseio.com",
+      projectId: "mstu5013project2018",
+      storageBucket: "mstu5013project2018.appspot.com",
+      messagingSenderId: "451312811021"
+    };
+    firebase.initializeApp(config);
   </script>
 
 </body>

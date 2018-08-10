@@ -3,7 +3,7 @@
 
   <div class="card">
     <div class="card-body">
-      <form action={ actionPage }>
+      <form onsubmit={ handleSubmit }>
         <p>First name:<input type="text" name="firstname" value=""></p>
 
         <p>Last name:<input type="text" name="lastname" value=""></p>
@@ -16,7 +16,7 @@
 
         <p>E-Mail:<input type="text" name="email" value=""><p>
 
-        <input type="submit" value="Submit">
+        <button class="btn btn-primary" type="submit">Submit</button>
         <input type="reset">
       </form>
     </div>
@@ -24,6 +24,7 @@
 
     <script>
       console.log('Submit', this);
+
     </script>
 
     <style>

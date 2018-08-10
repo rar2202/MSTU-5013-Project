@@ -1,6 +1,5 @@
 # MSTU-5013-Project
 
-MSTU 5013 Project
 By: Becca Rosenberg and Mary Babin
 
 Description: A "teacher-maintained" website that is designed for students and parents to better understand concepts that their children are learning in school. The website has three main objectives:

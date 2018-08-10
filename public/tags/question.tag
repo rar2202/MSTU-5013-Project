@@ -29,22 +29,21 @@
     this.question = !this.question;
   };
 
-  this.updateQuestion = function(event){
-    this.newQuestion = this.refs.newQuestion.value;
-  };
 
   this.updateQuestion = function(event) {
+
+    this.newQuestion = this.refs.newQuestion.value;
 
     var database = firebase.database();
 
     var newQuestion = this.refs.newQuestion.value; // get from input
 
-    var registrationRef = database.ref('Questions');
+    var questionRef = database.ref('Questions');
 
-    registrationRef.push({
+    questionRef.push({
       NewQuestion: newQuestion,
     });
-}
+  }
 
 
   </script>

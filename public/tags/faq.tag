@@ -131,16 +131,16 @@ this.data = [{
 //    };
 
     <!--New Question-->
-    this.question = false;
-    this.newQuestion = ""
-
-    this.toggleQuestion = function(event){
-      this.question = !this.question;
-    };
-
-    this.updateQuestion = function(event){
-      this.newQuestion = this.refs.newQuestion.value;
-    };
+    // this.question = false;
+    // this.newQuestion = ""
+    //
+    // this.toggleQuestion = function(event){
+    //   this.question = !this.question;
+    // };
+    //
+    // this.updateQuestion = function(event){
+    //   this.newQuestion = this.refs.newQuestion.value;
+    // };
 
 
   </script>

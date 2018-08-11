@@ -16,14 +16,18 @@
         { newQuestion }
         </p>
         <br>
+        <!-- <ul id="questions">
+        </ul> -->
       </div>
     </section>
   </div>
 
   <script>
 
+  var that = this;
+
   this.question = false;
-  this.newQuestion = ""
+  this.newQuestion = [];
 
   this.toggleQuestion = function(event){
     this.question = !this.question;
@@ -36,12 +40,27 @@
 
     var database = firebase.database();
 
-    var newQuestion = this.refs.newQuestion.value; // get from input
+    var newQuestion = this.refs.newQuestion.value;
 
     var questionRef = database.ref('Questions');
 
     questionRef.push({
       NewQuestion: newQuestion,
+    });
+
+    questionsRef.on('value', function(snapshot){
+      var datas = snapshot.val();
+
+      var questions = [];
+
+      for (var key in datas)
+        questions.push(datas[key]);
+
+      that.newQuestion = questions;
+      that.update();
+
+      // refer to hackmd page 
+
     });
   }
 

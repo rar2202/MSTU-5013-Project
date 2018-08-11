@@ -23,3 +23,7 @@ body {
   font-size: 15px;
   font-family: 'Gaegu', cursive;
 }
+
+.card-outline {
+  border: 1px solid #FFFFFF;
+}

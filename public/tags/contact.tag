@@ -1,30 +1,47 @@
 <contact>
-  <h2>Can't find an answer to your question? Please feel free to contact me using the form below.</h2>
+  <h2>Students and Parents: Can't find an answer to your question or would like to speak privately?</h2>
 
-  <div class="card">
-    <div class="card-body">
-      <form onsubmit={ handleSubmit }>
-        <p>First name:<input type="text" name="firstname" value=""></p>
-
-        <p>Last name:<input type="text" name="lastname" value=""></p>
-
-        <p>Phone:  <input type="text" name="phone" value="">
-          <select>
-            <option value="Home">Home</option>
-            <option value="Cell">Cell</option>
-          </select></p>
-
-        <p>E-Mail:<input type="text" name="email" value=""><p>
-
-        <button class="btn btn-primary" type="submit">Submit</button>
-        <input type="reset">
-      </form>
+<div class="container">
+  <div class="row">
+    <div class="col-2">
+    </div>
+    <div class="col-8">
+      <div class="card">
+        <div class="card-body">
+            <p>First Name: <input ref="firstname2"></p>
+            <p>Last name: <input ref="lastname2"></p>
+            <p>E-Mail: <input type="email" ref="email2"/></p>
+            <p>Question: <textarea ref="quest"></textarea></p>
+            <button class="btn btn-info" onclick = { submitContact }>Submit</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-2">
     </div>
   </div>
+</div>
+
 
     <script>
-      console.log('Submit', this);
+      this.submitContact = function(event) {
+        console.log('submitted');
 
+        var database = firebase.database();
+
+        var firstname2 = this.refs.firstname2.value; // get from input
+        var lastname2 = this.refs.lastname2.value; // get from input
+        var email2 = this.refs.email2.value; // get from input
+        var quest = this.refs.quest.value; // get from input
+
+        var contactRef = database.ref('Contact Questions');
+
+        contactRef.push({
+          FirstName: firstname2,
+          LastName: lastname2,
+          EMail: email2,
+          Question: quest
+        });
+    }
     </script>
 
     <style>

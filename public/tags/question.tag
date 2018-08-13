@@ -48,18 +48,20 @@
       NewQuestion: newQuestion,
     }); // generates unique key for data
 
+  // do I need to set the data? 
+
     //on is a listener
-    questionRef.on('value', function(snapshot){
-      var shortcut = snapshot.val(); // data tucked away in snapshot
+  questionRef.on('value', function(snapshot){
+    var shortcut = snapshot.val(); // data tucked away in snapshot
       // object with properties as keys
 
-      var questions = [];
+    var questions = [];
 
-      for (var key in shortcut)
-        questions.push(shortcut[key]);
+    for (var key in shortcut)
+      questions.push(shortcut[key]);
 
-      that.newQuestion = questions;
-      that.update();
+    that.newQuestion = questions;
+    that.update();
 
     });
   }

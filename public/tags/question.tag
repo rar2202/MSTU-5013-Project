@@ -48,7 +48,11 @@
       NewQuestion: newQuestion,
     }); // generates unique key for data
 
-  // do I need to set the data? 
+    // all the data that is set without a key is appearing on the list when using the code below...
+    // must press submit button twice - it also makes it into a key object as well in the database...
+
+    // questionRef.child('Question').set(newQuestion);
+
 
     //on is a listener
   questionRef.on('value', function(snapshot){

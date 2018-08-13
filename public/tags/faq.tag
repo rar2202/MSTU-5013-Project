@@ -4,91 +4,33 @@
 
   <faq-item each={ data }> </faq-item>
 
-  <!-- Question One -->
+  <!-- Question One & Two -->
 
-  <!-- <div class="container">
-    <section class="card mb-5 border-dark bg-white" id="question1">
-      <div class="card-body">
-        <h3 class="card-title"> Question #1 </h3>
-        <h5 class="card-subtitle"><b>"Where can I go to find my student's homework assignments?"</b><h5>
-        <p class="card-text answer"> You can go to the teacher's webpage on the district site. </p>
-
-        <div class="card-footer">
-          <h5 class="card-text"> Was this answer helpful? </h5>
-
-          <button type="button" class="card-btn btn-success" onclick={ increaseNumber }>Like</button>
-          <button type="button" class="card-btn btn-danger" onclick={ decreaseNumber }>Dislike</button>
-          <button type="button" class="card-btn btn-primary" onclick={ reset }>Reset</button>
-
-          <p class="card-text"> Likes = { approvalNumber } Dislikes = { disapprovalNumber } </p>
-        </div>
-      </div>
-    </section>
-  </div> -->
-
-  <!-- Question Two -->
-
-  <!-- <div class="container"> -->
-    <!-- <section class="card mb-5 border-dark bg-white" id="question2"> -->
-      <!-- <div class="card-body"> -->
-        <!-- <h3 class="card-title"> Question #2 </h3> -->
-        <!-- <h5 class="card-subtitle"><b> "How will this help my student with state testing?"<b><h5> -->
-        <!-- <p class="card-text answer"> While using this game, the student will not only be engaging in content that may be included on the state-wide exam, but they will also be practicing how to answer questions that will appear on the exam.  </p>
-
-        <div class="card-footer">
-          <h5> Was this answer helpful? </h5>
-
-          <button type="button" class="card-btn btn-success" onclick={ increaseNumber2 }>Like</button>
-          <button type="button" class="card-btn btn-danger" onclick={ decreaseNumber2 }>Dislike</button>
-          <button type="button" class="card-btn btn-primary" onclick={ reset2 }>Reset</button>
-
-          <p class="card-text"> Likes = { approvalNumber2 } Dislikes = { disapprovalNumber2 } </p>
-        </div>
-      </div>
-    </section>
-  </div> -->
+  <!-- Input information moved to faq-item -->
 
   <!--New Question-->
 
   <h2> <center> Send Your Own Question <center> </h2>
 
-    <question> </question>
+  <question> </question> <!-- Whenever I add the "each" it breaks the code --> 
 
-  <!-- <div class="container">
-    <section class="card mb-5 border-dark bg-light" id="newquestion">
-      <div class="card-body"
-        <h5 class="card-title"> Please use form below to write your question. </h5>
-
-        <input type="text" value="" placeholder="Write question here" onchange={ updateQuestion } ref="newQuestion">
-
-        <button type="button" class="card-btn btn-secondary" onclick={ toggleQuestion }> Submit </button>
-
-        <p class="class-text">
-        <br>
-        { question ? "New Question: " : "No Question" }
-        <br>
-        { newQuestion }
-        </p>
-        <br>
-      </div>
-    </section>
-  </div> -->
+  <!--New Question input moved to question tag-->
 
   <script>
 
-this.data = [{
-  question: "Where can I go to find my student's homework assignments?",
-  answer: "You can go to the teacher's webpage on the district site.",
-  likes: 0,
-  dislikes: 0,
-  qNum: 1
-}, {
-  question: "How will this help my student with state testing?",
-  answer: "While using this game, the student will not only be engaging in content that may be included on the state-wide exam, but they will also be practicing how to answer questions that will appear on the exam.",
-  likes: 0,
-  dislikes: 0,
-  qNum: 2
-}];
+  this.data = [{
+    question: "Where can I go to find my student's homework assignments?",
+    answer: "You can go to the teacher's webpage on the district site.",
+    likes: 0,
+    dislikes: 0,
+    qNum: 1
+  }, {
+    question: "How will this help my student with state testing?",
+    answer: "While using this game, the student will not only be engaging in content that may be included on the state-wide exam, but they will also be practicing how to answer questions that will appear on the exam.",
+    likes: 0,
+    dislikes: 0,
+    qNum: 2
+  }];
 
 
   var that = this;
@@ -147,17 +89,7 @@ this.data = [{
 
   <style>
     :scope {
-      /* display: block; */
-      /* padding: 70px;
-      background-color: #ADD8E6; */
       font-family: 'Gaegu', cursive;
-    }
-
-    .black-border {
-      border: 2px solid #000000;
-      padding: 10px;
-      margin: 10px;
-      background-color: #ADD8E6;
     }
 
     .answer-listing {

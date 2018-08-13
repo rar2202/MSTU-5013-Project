@@ -25,5 +25,9 @@ body {
 }
 
 .card-outline {
-  border: 1px solid #FFFFFF;
+  border: .5px solid #FFFFFF;
+}
+
+.img-outline {
+  border: 2px dashed #D8D8D8;
 }

@@ -1,59 +1,51 @@
 <drag-drop>
 
-  <p>Drag the shape that has four right angles into the area below:</p>
-    <input ref="author">
-    <input ref="something">
-    <button onclick={ submitFAQ } ondragover={ allowDrop }>Submit</button>
-  <br>
-  <!-- <img id="drag1" src="http://www.clker.com/cliparts/p/w/s/A/V/6/green-square-hi.png" draggable="true" ondragstart="drag(event)" width="45" height="45"> -->
+  <p>Drag the shape that has four right angles and four congruent sides into the area below:</p>
+
+<div class="container">
+  <div class="row justify-content-around">
+    <div class="col-xs-6">
+      <div id="div1" ondrop={ drop } ondragover={ allowDrop }></div>
+    </div>
+
+    <br>
+
+    <div class="col-xs-6">
+      <img id="drag1" src="http://www.clker.com/cliparts/p/w/s/A/V/6/green-square-hi.png"
+      draggable="true" ondragstart={ drag } width="110" height="100">
+      <img id="drag2" src="http://kindersay.com/files/images/triangle.png"
+      draggable="true" ondragstart={ drag } width="110" height="100">
+      <img id="drag3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Simple_parallelogram.svg/2000px-Simple_parallelogram.svg.png"
+      draggable="true" ondragstart={ drag } width="110" height="90">
+      <img id="drag4" src="http://www.clker.com/cliparts/e/K/C/4/O/i/rectangle-hi.png"
+      draggable="true" ondragstart={ drag } width="80" height="120">
+    </div>
+  </div>
+</div>
+
 
 <script>
-  this.allowDrop = function(ev) {
-    ev.preventDefault();
+  this.allowDrop = function(event) {
+    event.preventDefault();
   }
 
-  this.drag = function(e) {
-    e.dataTransfer.setData("text", e.target.id);
+  this.drag = function(event) {
+    event.dataTransfer.setData("text", event.target.id);
   }
 
-  this.submitFAQ = function(event) {
-    // ev.preventDefault();
-    // var data = ev.dataTransfer.getData("text");
-    // ev.target.appendChild(document.getElementById(data));
-		console.log('test');
-
-		// var fakeData = {
-		// 	animal: "tiger",
-		// 	legs: 4,
-		// 	alive: true
-		// };
-
-		var database = firebase.database();
-  	// var animalsRef = database.ref('animals');
-
-		var butterFingers = database.ref('Course/MSTU5013').set(false);
-
-		var user = "Jin Kuwata";
-		// animalsRef.push(fakeData);
-
-		var something = this.refs.something.value; // get from input
-		var author = this.refs.author.value; // get from input
-		var category = ""; // get from input
-
-
-		var messagesRef = database.ref('messages');
-
-		messagesRef.push({
-			author: author,
-			text: something
-		});
+  this.drop = function(event) {
+    event.preventDefault();
+    var data = event.dataTransfer.getData("text");
+    event.target.appendChild(document.getElementById(data));
+		console.log('dropped');
   }
 </script>
 
 <style>
   :scope {
-    font-family:  'Gaegu';
+    font-family: 'Gaegu';
   }
+
 
   pre {
     border: 1px solid #333;
@@ -63,12 +55,12 @@
     font-family: 'Gaegu';
   }
 
-  /* #div1 {
-      width: 350px;
-      height: 70px;
+  #div1 {
+      width: 300px;
+      height: 200px;
       padding: 10px;
-      border: 1px solid #aaaaaa;
-  } */
+      border: 2px solid #aaaaaa;
+  }
 </style>
 
 </drag-drop>

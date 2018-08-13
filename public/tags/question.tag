@@ -16,8 +16,9 @@
         { newQuestion }
         </p>
         <br>
-        <!-- <ul id="questions">
-        </ul> -->
+        <ul id="questions">
+        </ul>
+         <!-- supposedly questions should go here...  -->
       </div>
     </section>
   </div>
@@ -27,43 +28,41 @@
   var that = this;
 
   this.question = false;
-  this.newQuestion = [];
+  this.newQuestion = []; // new questions go here
 
   this.toggleQuestion = function(event){
     this.question = !this.question;
-  };
+  }; // toggles the question or no question
 
 
   this.updateQuestion = function(event) {
 
     this.newQuestion = this.refs.newQuestion.value;
 
-    var database = firebase.database();
+    var database = firebase.database(); // returns a database object - writing to database
+    var questionRef = database.ref('Questions'); // returns a reference object that points to my questions folder
 
     var newQuestion = this.refs.newQuestion.value;
 
-    var questionRef = database.ref('Questions');
-
     questionRef.push({
       NewQuestion: newQuestion,
-    });
+    }); // generates unique key for data
 
-    questionsRef.on('value', function(snapshot){
-      var datas = snapshot.val();
+    //on is a listener
+    questionRef.on('value', function(snapshot){
+      var shortcut = snapshot.val(); // data tucked away in snapshot
+      // object with properties as keys
 
       var questions = [];
 
-      for (var key in datas)
-        questions.push(datas[key]);
+      for (var key in shortcut)
+        questions.push(shortcut[key]);
 
       that.newQuestion = questions;
       that.update();
 
-      // refer to hackmd page 
-
     });
   }
-
 
   </script>
 

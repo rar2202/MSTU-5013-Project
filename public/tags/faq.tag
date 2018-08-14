@@ -10,9 +10,9 @@
 
   <!--New Question-->
 
-  <h2> <center> Send Your Own Question <center> </h2>
+  <h2> <center> Add Your Own Question <center> </h2>
 
-  <question> </question> <!-- Whenever I add the "each" it breaks the code --> 
+  <question> </question>
 
   <!--New Question input moved to question tag-->
 

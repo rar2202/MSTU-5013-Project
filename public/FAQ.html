@@ -77,9 +77,6 @@
 
   <script src="https://cdn.jsdelivr.net/riot/3.1.0/riot+compiler.js"></script>
 
-  <script>
-    riot.mount('*');
-  </script>
 
   <style>
     :scope {}
@@ -98,6 +95,8 @@
       messagingSenderId: "451312811021"
     };
     firebase.initializeApp(config);
+
+    riot.mount('*');
   </script>
 </body>
 </html>

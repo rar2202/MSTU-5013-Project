@@ -11,14 +11,19 @@
 
         <p class="class-text">
         <br>
-        { question ? "New Question: " : "No Question" }
+        { question ? "Status: New Question Added" : "Status: No New Question" }
         <br>
-        { newQuestion }
+
         </p>
         <br>
+        <p class="class-text">
+          <strong> List of Parent Questions: </strong>
+        </p>
         <ul id="questions">
+          <li each={ newQuestion }>
+            { NewQuestion }
+          </li>
         </ul>
-         <!-- supposedly questions should go here...  -->
       </div>
     </section>
   </div>
@@ -30,6 +35,24 @@
   this.question = false;
   this.newQuestion = []; // new questions go here
 
+  var database = firebase.database(); // returns a database object - writing to database
+  var questionRef = database.ref('Questions'); // returns a reference object that points to my questions folder
+
+  questionRef.on('value', function(snapshot){
+    var shortcut = snapshot.val(); // data tucked away in snapshot
+      // object with properties as keys
+
+    var questions = [];
+
+    for (var key in shortcut) {
+      questions.push(shortcut[key]);
+    }
+
+    that.newQuestion = questions;
+    that.update();
+  });
+
+
   this.toggleQuestion = function(event){
     this.question = !this.question;
   }; // toggles the question or no question
@@ -39,35 +62,12 @@
 
     this.newQuestion = this.refs.newQuestion.value;
 
-    var database = firebase.database(); // returns a database object - writing to database
-    var questionRef = database.ref('Questions'); // returns a reference object that points to my questions folder
-
     var newQuestion = this.refs.newQuestion.value;
 
     questionRef.push({
       NewQuestion: newQuestion,
-    }); // generates unique key for data
+    }); // generates unique key for data - no set needed
 
-    // all the data that is set without a key is appearing on the list when using the code below...
-    // must press submit button twice - it also makes it into a key object as well in the database...
-
-    // questionRef.child('Question').set(newQuestion);
-
-
-    //on is a listener
-  questionRef.on('value', function(snapshot){
-    var shortcut = snapshot.val(); // data tucked away in snapshot
-      // object with properties as keys
-
-    var questions = [];
-
-    for (var key in shortcut)
-      questions.push(shortcut[key]);
-
-    that.newQuestion = questions;
-    that.update();
-
-    });
   }
 
   </script>

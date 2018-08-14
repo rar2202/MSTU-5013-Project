@@ -1,7 +1,7 @@
 <question>
 
   <div class="container">
-    <section class="card mb-5 border-dark bg-light" id="newquestion">
+    <section class="card mb-5 border-dark bg-white" id="newquestion">
       <div class="card-body"
         <h5 class="card-title"> Please use form below to write your question. </h5>
 
@@ -16,14 +16,16 @@
 
         </p>
         <br>
-        <p class="class-text">
-          <strong> List of Parent Questions: </strong>
-        </p>
-        <ul id="questions">
-          <li each={ newQuestion }>
-            { NewQuestion }
-          </li>
-        </ul>
+        <div class="card-footer">
+          <p class="class-text">
+            <strong> List of Parent Questions: </strong>
+          </p>
+          <ul id="questions">
+            <li each={ newQuestion }>
+              { NewQuestion }
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
   </div>

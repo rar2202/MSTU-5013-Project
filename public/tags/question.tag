@@ -1,7 +1,7 @@
 <question>
 
   <div class="container">
-    <section class="card mb-5 border-dark bg-white" id="newquestion">
+    <section class="card mb-5 border-gray bg-white" id="newquestion">
       <div class="card-body"
         <h5 class="card-title"> Please use form below to write your question. </h5>
 

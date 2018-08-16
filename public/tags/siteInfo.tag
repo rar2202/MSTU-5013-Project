@@ -1,8 +1,27 @@
 <siteInfo>
 
   <div class="container">
+    <section class="card mb-5 border-gray bg-white" id="objective">
+      <div class="card-header bg-warning">
+        <h3 class="card-title center"> <strong> RRMB Inc. Objectives </strong> </h3>
+      </div>
+      <div class="card-body">
+        <p class="card-text">
+          <ul>
+            <li> To provide information, practice problems, and helpful links for students and parents for each math unit.</li>
+            <li> To help children become comfortable with the types of questions they will be expected to interact with during state-wide computer-based standardized testing. Practice questions will be formatted using a game-like structure so children are exposed to academic content while also having fun.</li>
+            <li> To provide parents with an FAQ resource where they can look up frequently asked questions, as well as ask their own.</li>
+          </ul>
+        </p>
+      </div>
+    </section>
+  </div>
+
+
+
+  <div class="container">
     <div class="row">
-      
+
       <!-- parent information -->
       <div class="col-md-6">
         <section class="card mb-5 border-gray bg-white" id="parents">
@@ -13,10 +32,18 @@
             <h5 class="card-subtitle"><b> Directions For Parents </b><h5>
               <p class="card-text"> Helpful navigation tools for parents are located within the...
                 <ul>
-                  <li class="card-text"> "Registration" tab, which allows for parents to sign up for weekly e-mail updates.</li>
-                  <li class="card-text"> "FAQ" tab, which allows for parents to look at frequently asked questions, as well as add questions of their own.</li>
-                  <li class="card-text"> "Contact" tab, which allows for parents to send questions or comments in a private enviornment.</li>
-                  <li class="card-text"> "Map" tab, which allows for parents to see where the location of RRMB Inc. is located.</li>
+                  <li class="card-text">
+                    <a href="Registration.html"> "Registration"</a> tab, which allows for parents to sign up for weekly e-mail updates.
+                  </li>
+                  <li class="card-text">
+                    <a href="FAQ.html"> "FAQ"</a> tab, which allows for parents to look at frequently asked questions, as well as add questions of their own.
+                  </li>
+                  <li class="card-text">
+                    <a href="contact.html"> "Contact"</a> tab, which allows for parents to send questions or comments in a private enviornment.
+                  </li>
+                  <li class="card-text">
+                    <a href="map.html"> "Map"</a> tab, which allows for parents to see where the location of RRMB Inc. is located.
+                  </li>
                 </ul>
               </p>
             </div>
@@ -34,8 +61,14 @@
             <p class="card-text"> Helpful navigation tools for students is located within the...
               <ul>
                 <li class="card-text"> "Units" tab, where students can find the educational activities provided by this site.</li>
+                  <ul>
+                    <li class="card-text"> In the "Units" tab there are activities for Number Sense, Multiplication, Division, Fractions, Decimals, <a href="Geometry.html">Geometry</a>, and Patterns and Algebra.
+                    </li>
+                  </ul>
               </ul>
             </p>
+            <br>
+            <p class="card-text text-danger center"> Currently, all units are under construction, except <strong> Geometry. </strong> </p>
         </div>
       </section>
     </div>

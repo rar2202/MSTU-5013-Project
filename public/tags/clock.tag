@@ -3,7 +3,7 @@
   <div class="container" id="clock">
     <section class="card mb-5 border-gray bg-light">
       <div class="card-body">
-        <h3 class="label card-title center"> Today's Date: { currentDay } </h3>
+        <h4 class="label card-title center"> Today's Date: { currentDay } </h4>
         <h5 class ="card-subtitle center"> Time: { currentTime } </h5>
       </div>
     </section>

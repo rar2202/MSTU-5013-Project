@@ -76,11 +76,12 @@
     <!--The div element for the map -->
     <div id="map"></div>
 
-    <map></map>
+    <h4> Teachers College Columbia </h4>
+    <h5> The Gottesman Libraries </h5>
+    <h6> <strong> Address: </strong> 525 W 120th St, New York, NY 10027 </h6>
+
   </div>
 </div>
-
-  <script src="./tags/map.tag" type="riot/tag"></script>
 
 
   <script src="https://cdn.jsdelivr.net/npm/riot@3.11/riot+compiler.js"></script>
@@ -104,12 +105,12 @@
 
     map = new google.maps.Map(document.getElementById('map'), {
       center: {lat: 40.8101745, lng: -73.9606229},
-      zoom: 16
+      zoom: 16,
       draggable: false
     });
 
     var marker = new google.maps.Marker({
-      positionL myLatLng,
+      position: siteLocation,
       map: map,
       title: 'RRMB Location'
     });

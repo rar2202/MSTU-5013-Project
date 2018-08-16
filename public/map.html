@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Homepage</title>
+  <title>Map</title>
+  <meta name="viewport" content="initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Chela+One|Gaegu|Sofia" rel="stylesheet">
@@ -46,7 +47,8 @@
         </div>
 
         <a class="nav-item nav-link" href="FAQ.html">FAQ</a>
-        <a class="nav-item nav-link" href="#">Contact</a>
+        <a class="nav-item nav-link" href="contact.html">Contact</a>
+        <a class="nav-item nav-link" href="map.html">Contact</a>
 
         <form class="form-inline">
           <input class="form-control mr-2" type="text" placeholder="Search">
@@ -61,7 +63,7 @@
 <header class="jumbotron title mt-5">
   <div class="container">
     <br>
-    <h1 class="h1-font">Contact</h1>
+    <h1 class="h1-font">Map</h1>
   </div>
 </header>
 
@@ -69,14 +71,16 @@
 
 <div class="container">
   <div row="col-12">
-    <contact></contact>
+
+    <h3>Where Are We Located?</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
+
+    <map></map>
   </div>
 </div>
 
-<br><br>
-
-
-  <script src="./tags/contact.tag" type="riot/tag"></script>
+  <script src="./tags/map.tag" type="riot/tag"></script>
 
 
   <script src="https://cdn.jsdelivr.net/npm/riot@3.11/riot+compiler.js"></script>
@@ -87,6 +91,21 @@
   </script>
 
   <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSnPsYpagLPyc2y_28Fc454vAGXfovfdI&callback=initMap"
+    async defer></script>
+    <!-- Change user access/ deploy current page  -->
+
+  <script>
+  var map;
+
+  function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+      center: {lat: 40.8101745, lng: -73.9606229},
+      zoom: 16
+    });
+  }
+  </script>
 
   <script>
     // Initialize Firebase
@@ -102,6 +121,18 @@
 
     riot.mount('*');
   </script>
+
+  <style>
+     #map {
+       height: 400px;
+       width: 100%;
+     }
+     html, body {
+       height: 100%;
+       margin: 0;
+       padding: 0;
+     }
+   </style>
 
 </body>
 </html>

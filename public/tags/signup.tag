@@ -55,7 +55,7 @@
       background-color: #F5F5F5;
       font-family: 'Gaegu';
     }
-  
+
   </style>
 
 </signup>

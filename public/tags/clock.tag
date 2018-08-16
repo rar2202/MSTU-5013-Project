@@ -16,24 +16,20 @@
 
   var d = new Date(); // could just use { new Date } in HTML but it has ALL date info and is in military time.
 
-  var hours = d.getHours();
+  var hours = d.getHours(),
+      ampm = 'AM';
     if (hours > 12) {
       hours = hours - 12;
-    } // to have accurate time that isn't military time.
+      ampm = 'PM';
+    } else if (hours === 0) {
+      hours = 12;
+    }  // to have accurate time that isn't military time & midnight
 
   var minutes = d.getMinutes();
     if (minutes < 10) {
       minutes = "0" + minutes;
     } // adds zero to front of number if less than 10.
 
-  var ampm = 'AM';
-    if (hours === 0) {
-      hours = 12;
-    }
-    else if (hours > 12) {
-      hours = hours % 12;
-      ampm = 'PM';
-    }
 
   this.currentDay = (d.getMonth() +1) + "/" + d.getDate(); // month was one month behind.
   this.currentTime = hours + ":" + minutes + " " + ampm;

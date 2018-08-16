@@ -109,12 +109,25 @@
       draggable: false
     });
 
+    var popupContent = "RRMB Inc. <br>";
+        popupContent += "Teachers College, Columbia University <br>";
+        popupContent += "The Gottesman Libraries <br>";
+        popupContent += "Address: </strong> 525 W 120th St, New York, NY 10027";
+
+    var infowindow = new google.maps.InfoWindow({
+      content: popupContent
+    })
+
     var marker = new google.maps.Marker({
       position: siteLocation,
       map: map,
       title: 'RRMB Location'
     });
-  }
+
+    marker.addListener('click', function () {
+      infowindow.open(map, marker);
+    }
+  });
 
   </script>
 

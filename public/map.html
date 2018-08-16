@@ -100,11 +100,21 @@
   var map;
 
   function initMap() {
+    var siteLocation = {lat: 40.8101745, lng: -73.9606229};
+
     map = new google.maps.Map(document.getElementById('map'), {
       center: {lat: 40.8101745, lng: -73.9606229},
       zoom: 16
+      draggable: false
+    });
+
+    var marker = new google.maps.Marker({
+      positionL myLatLng,
+      map: map,
+      title: 'RRMB Location'
     });
   }
+
   </script>
 
   <script>

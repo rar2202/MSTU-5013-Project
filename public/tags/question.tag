@@ -5,7 +5,7 @@
       <div class="card-body"
         <h5 class="card-title"> Please use form below to write your question. </h5>
 
-        <input type="text" value="" placeholder="Write question here" onchange={ updateQuestion } ref="newQuestion">
+        <input type="text" value="" placeholder="Write question here" onchange={ updateQuestion } ref="newQuestion" id="newQuestion">
 
         <button type="button" class="card-btn btn-secondary" onclick={ toggleQuestion }> Submit </button>
 
@@ -57,7 +57,8 @@
 
   this.toggleQuestion = function(event){
     this.question = !this.question;
-  }; // toggles the question or no question
+    alert('Question submitted.');
+  }; // How do make it stop after first submit?
 
 
   this.updateQuestion = function(event) {
@@ -70,6 +71,8 @@
       NewQuestion: newQuestion,
     }); // generates unique key for data - no set needed
 
+    this.refs.newQuestion.value = "";
+    this.refs.newQuestion.value.focus();
   }
 
   </script>

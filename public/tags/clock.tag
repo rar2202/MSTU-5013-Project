@@ -1,5 +1,4 @@
 <clock>
-
   <div class="container" id="clock">
     <section class="card mb-5 border-gray bg-light">
       <div class="card-body">

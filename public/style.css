@@ -31,3 +31,7 @@ body {
 .img-outline {
   border: 2px dashed #D8D8D8;
 }
+
+.center {
+  text-align: center;
+}

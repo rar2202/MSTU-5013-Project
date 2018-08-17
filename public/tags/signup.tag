@@ -6,7 +6,7 @@
     <div class="col-xs-6">
       <div class="card border-gray bg-white">
         <div class="card-header bg-info">
-          <h3><strong>Parents: Complete the form below</strong></h3>
+          <h3 class="card-title center"><strong>Parents: Complete the form below</strong></h3>
           <h3><strong>to register for weekly e-mail updates!</strong></h3>
         </div>
         <div class="card-body">

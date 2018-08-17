@@ -1,16 +1,18 @@
 <signup>
-  <h2>Parents: Complete the form below to register for weekly e-mail updates!</h2>
-
 <div class="container">
   <div class="row">
     <div class="col-2">
     </div>
     <div class="col-xs-6">
-      <div class="card">
+      <div class="card border-gray bg-white">
+        <div class="card-header bg-info">
+          <h3><strong>Parents: Complete the form below</strong></h3>
+          <h3><strong>to register for weekly e-mail updates!</strong></h3>
+        </div>
         <div class="card-body">
-          <p>First Name: <input ref="firstname1"></p>
-          <p>Last name: <input ref="lastname1"></p>
-          <p>E-Mail: <input ref="email1" required/></p>
+          <p class="card-text">First Name: <input ref="firstname1"></p>
+          <p class="card-text">Last name: <input ref="lastname1"></p>
+          <p class="card-text">E-Mail: <input ref="email1" required/></p>
           <button onclick = { submitINFO } class="btn btn-info">Submit</button>
         </div>
       </div>

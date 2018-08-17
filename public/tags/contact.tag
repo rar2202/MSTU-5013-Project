@@ -1,17 +1,18 @@
 <contact>
-  <h3>Students and Parents: Can't find an answer to your question or would like to speak privately?</h3>
-
 <div class="container">
   <div class="row">
     <div class="col-2">
     </div>
     <div class="col-8">
-      <div class="card">
+      <div class="card border-gray bg-white">
+        <div class="card-header bg-info">
+          <h3 class="card-title center"> <strong>Students and Parents: Can't find an answer to your question or would like to speak privately?</strong></h3>
+        </div>
         <div class="card-body">
-            <p>First Name: <input ref="firstname2"></p>
-            <p>Last name: <input ref="lastname2"></p>
-            <p>E-Mail: <input type="email" ref="email2"/></p>
-            <p>Question: <textarea ref="quest"></textarea></p>
+            <p class="card-text">First Name: <input ref="firstname2"></p>
+            <p class="card-text">Last name: <input ref="lastname2"></p>
+            <p class="card-text">E-Mail: <input type="email" ref="email2"/></p>
+            <p class="card-text">Question: <textarea ref="quest"></textarea></p>
             <button class="btn btn-info" onclick = { submitContact }>Submit</button>
         </div>
       </div>

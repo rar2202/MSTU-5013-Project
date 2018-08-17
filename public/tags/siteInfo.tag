@@ -61,13 +61,13 @@
               <ul>
                 <li class="card-text"> "Units" tab, where students can find the educational activities provided by this site.</li>
                   <ul>
-                    <li class="card-text"> In the "Units" tab there are activities for Number Sense, Multiplication, Division, Fractions, Decimals, <a href="Geometry.html">Geometry</a>, and Patterns and Algebra.
+                    <li class="card-text"> In the "Units" tab there are activities for <a href="Geometry.html">Geometry,</a> Number Sense, Multiplication, Division, Fractions, Decimals, and Patterns and Algebra.
                     </li>
                   </ul>
               </ul>
             </p>
             <br>
-            <p class="card-text text-danger center"> Currently, all units are under construction, except <strong> Geometry. </strong> </p>
+            <p class="card-text text-danger center"> Currently, only <strong> Geometry </strong> unit is available. </p>
         </div>
       </section>
     </div>

@@ -43,15 +43,15 @@
 
     var answer = this.refs.trianglequestion.id;
 
-	//var equilateral = database.ref('Triangles/equilateral').set(false);
-  //var isosceles = database.ref('Triangles/isosceles').set(false);
-  //var scalene = database.ref('Triangles/scalene').set(true);
-  //var right = database.ref('Triangles/right').set(false);
+//	var equilateral = database.ref('Triangles/equilateral').set(false);
+//  var isosceles = database.ref('Triangles/isosceles').set(false);
+//  var scalene = database.ref('Triangles/scalene').set(true);
+//  var right = database.ref('Triangles/right').set(false);
 
 		var trianglesRef = database.ref('Triangles');
 
 		trianglesRef.push({
-			Triangle: answer,
+			Answer: answer,
 		});
   }
 </script>

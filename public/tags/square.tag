@@ -21,8 +21,8 @@
   this.squarequestion = false;
   this.newSquareQuestion = []; // new questions go here
 
-  var database = firebase.database(); // returns a database object - writing to database
-  var squarequestionRef = database.ref('SquareQuestion'); // returns a reference object that points to my questions folder
+  var database = firebase.database(); 
+  var squarequestionRef = database.ref('SquareQuestion');
 
   squarequestionRef.on('value', function(snapshot){
     var shortcut = snapshot.val(); // data tucked away in snapshot

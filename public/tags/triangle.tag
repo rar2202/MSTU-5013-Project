@@ -33,7 +33,7 @@
   this.newTriangleQuestion = []; // new questions go here
 
   var database = firebase.database(); // returns a database object - writing to database
-  var triquestionRef = database.ref('TriangleQuestion'); // returns a reference object that points to my questions folder
+  var triquestionRef = database.ref('TriangleQuestion'); 
 
   triquestionRef.on('value', function(snapshot){
     var shortcut = snapshot.val(); // data tucked away in snapshot

@@ -67,7 +67,7 @@
               </ul>
             </p>
             <br>
-            <p class="card-text text-danger center"> Currently, only <strong> Geometry </strong> unit is available. </p>
+            <p class="card-text text-danger center"> Currently, only the <strong> Geometry </strong> unit is available. </p>
         </div>
       </section>
     </div>

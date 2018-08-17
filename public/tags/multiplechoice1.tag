@@ -31,7 +31,7 @@
   </div>
 </div>
 
-  <button onclick={ submitTRIANGLE }>Submit</button>
+  <button class="btn btn-info" onclick={ submitTRIANGLE }>Submit</button>
 
 
 

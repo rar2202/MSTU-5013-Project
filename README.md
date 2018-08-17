@@ -18,4 +18,4 @@ Hosting URL: https://mstu5013project2018.firebaseapp.com
 
 Becca's YouTube Video: #
 
-Mary's YouTube Video: #
+Mary's YouTube Video: https://youtu.be/ZTDXNbS5wIQ

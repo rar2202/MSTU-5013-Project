@@ -9,7 +9,7 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12">
-      <form ref="trianglequestion">
+      <form ref="trianglemulti">
       <div class="form-check form-check-inline">
         <input class="form-check-input" type="radio" name="triangleradios" id="equilateral">
         <label><img class="img-thumbnail" width="150" height="150" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Equilateral-triangle.svg/2000px-Equilateral-triangle.svg.png" alt="Triangle 1"></label>
@@ -39,22 +39,28 @@
   this.submitTRIANGLE = function(event) {
 		console.log('triangle');
 
-		var database = firebase.database();
+    alert('Submitted.');
+  };
 
-    var answer = this.refs.trianglequestion.id;
+  var that = this;
+
+  var database = firebase.database(); // returns a database object - writing to database
+  var trianglemultiRef = database.ref('TriangleMulti');
+
+  var choice = this.refs.trianglemulti.id;
 
 //	var equilateral = database.ref('Triangles/equilateral').set(false);
 //  var isosceles = database.ref('Triangles/isosceles').set(false);
 //  var scalene = database.ref('Triangles/scalene').set(true);
 //  var right = database.ref('Triangles/right').set(false);
 
-		var trianglesRef = database.ref('Triangles');
-
-		trianglesRef.push({
-			Answer: answer,
+		trianglemultiRef.push({
+			Answer: choice,
 		});
   }
 </script>
+
+
 
 <style>
   :scope {

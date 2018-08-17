@@ -1,5 +1,5 @@
 <contact>
-  <h2>Students and Parents: Can't find an answer to your question or would like to speak privately?</h2>
+  <h3>Students and Parents: Can't find an answer to your question or would like to speak privately?</h3>
 
 <div class="container">
   <div class="row">

@@ -18,22 +18,22 @@
 
   <script>
 
-  this.data = [{
-    question: "Where can I go to find my student's homework assignments?",
-    answer: "You can go to the teacher's webpage on the district site.",
-    likes: 0,
-    dislikes: 0,
-    qNum: 1
-  }, {
-    question: "How will this help my student with state testing?",
-    answer: "While using this game, the student will not only be engaging in content that may be included on the state-wide exam, but they will also be practicing how to answer questions that will appear on the exam.",
-    likes: 0,
-    dislikes: 0,
-    qNum: 2
-  }];
+    this.data = [{
+      question: "Where can I go to find my student's homework assignments?",
+      answer: "You can go to the teacher's webpage on the district site.",
+      likes: 0,
+      dislikes: 0,
+      qNum: 1
+    }, {
+      question: "How will this help my student with state testing?",
+      answer: "While using this game, the student will not only be engaging in content that may be included on the state-wide exam, but they will also be practicing how to answer questions that will appear on the exam.",
+      likes: 0,
+      dislikes: 0,
+      qNum: 2
+    }];
 
 
-  var that = this;
+    var that = this;
 
   <!--Question One-->
 

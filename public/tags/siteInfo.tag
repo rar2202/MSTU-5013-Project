@@ -1,4 +1,6 @@
-<siteInfo>
+<siteinfo>
+
+  <!-- Objectives of Site -->
 
   <div class="container">
     <section class="card mb-5 border-gray bg-white" id="objective">
@@ -17,7 +19,7 @@
     </section>
   </div>
 
-
+  <!-- Parent and Student Directions -->
 
   <div class="container">
     <div class="row">
@@ -79,10 +81,10 @@
 
 
   <style>
-  .center {
-    text-align: center,
-  }
+    .center {
+      text-align: center,
+    }
   </style>
 
 
-</siteInfo>
+</siteinfo>

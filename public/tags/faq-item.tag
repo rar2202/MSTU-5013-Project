@@ -22,26 +22,26 @@
 
 <script>
 
-this.likes = 0;
-this.dislikes = 0;
-
-this.increaseNumber = function(event){
-  this.likes++;
-};
-
-this.decreaseNumber = function(event){
-  this.dislikes++;
-};
-
-this.reset = function(event) {
-  this.dislikes = 0;
   this.likes = 0;
-};
+  this.dislikes = 0;
+
+  this.increaseNumber = function(event){
+    this.likes++;
+  };
+
+  this.decreaseNumber = function(event){
+    this.dislikes++;
+  };
+
+  this.reset = function(event) {
+    this.dislikes = 0;
+    this.likes = 0;
+  };
 
 </script>
 
 <style>
-:scope {}
+  :scope {}
 </style>
 
 </faq-item>

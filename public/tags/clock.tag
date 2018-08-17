@@ -31,7 +31,7 @@
     } // adds zero to front of number if less than 10.
 
 
-  this.currentDay = (d.getMonth() +1) + "/" + d.getDate(); // month was one month behind.
+  this.currentDay = (d.getMonth() +1) + "/" + d.getDate() + "/" + d.getFullYear(); // month was one month behind.
   this.currentTime = hours + ":" + minutes + " " + ampm;
 
   // meta is set in index.html to update page every 10 seconds. So time is relatively correct.

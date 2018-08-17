@@ -65,123 +65,11 @@
 </header>
 
 <!--Body-->
-
-<div class="container">
-  <div row="col=12">
-    <h2>Two-Dimensional Shapes</h2>
-
-    <div class="card">
-      <div class="card-header">
-        <ul class="nav nav-pills" id="myTab" role="tablist">
-          <li class="nav-item">
-            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#poly" role="tab" aria-controls="poly" aria-selected="true">Polygons</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#regular" role="tab" aria-controls="regular" aria-selected="false">Regular</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#irregular" role="tab" aria-controls="irregular" aria-selected="false">Irregular</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="polyvideo-tab" data-toggle="tab" href="#polyvideo" role="tab" aria-controls="polyvideo" aria-selected="false">Polygon Video</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="card-body">
-        <div class="tab-content" id="myTabContent">
-
-          <div class="tab-pane fade show active" id="poly" role="tabpanel" aria-labelledby="poly-tab">
-            <p class="card-text">A <u>polygon</u> is a closed, plane figure with at least three straight sides and angles.</p>
-            <img src="https://lh3.googleusercontent.com/dROIZZ3XbLN9Fu8OHeRzhQfL54ZG8EwC4l1YDF55-eZuDyhEWKB6J2ZowcYdQbOek7howgu59fM_zbWbnWFk98URfuHowcrf7gBd63me2-S_TFN3WaSLYfQWMyXKLYcwIxjztQnYkg=w2400" alt="Not Polygons" class="card-img img-responsive img-outline">
-          </div>
-
-          <div class="tab-pane fade" id="regular" role="tabpanel" aria-labelledby="regular-tab">
-            <p class="card-text">A <u>regular polygon</u> is a closed, plane figure with at least three straight sides and angles. All sides and all angles are
-              <button class="btn btn-outline-success" data-toggle="collapse" data-target="#congruent" aria-expanded="Link to Congruent">congruent</button>.
-              <div id="congruent" class="collapse">
-                <p class="smaller-font"><u>Congruent:</u> Figures that are the same; identical.  Sides are congruent when they are the same length. Angles are congruent when they are the same measure of degrees.</p>
-              </div>
-              <div>
-                <img src="https://lh3.googleusercontent.com/Zl9P8Zcg6zO0AvOQbV6oG4BbgQKd-N17CRM3CPV5aeSkHCWl4j1BQhyLazvOzVLXIfdRxCWbmdHt3HnHS59kjVlOTALJgF6tsJ4X4OLBxuKMvrMouT-o8yhxFxjSVB58UTojBDqXYA=w2400" alt="Regular Polygons" class="card-img img-responsive img-outline">
-              </div>
-            </p>
-          </div>
-
-          <div class="tab-pane fade" id="irregular" role="tabpanel" aria-labelledby="irregular-tab">
-            <p class="card-text">An <u>irregular polygon</u> is a closed, plane figure with at least three straight sides and angles. Not all sides and angles are congruent.</p>
-            <div>
-              <img src="https://lh3.googleusercontent.com/9RlTleMJuQyRVOOgsFHLI0lF_KE0YVwDQCHVPRYT3ucanDqe1AKqu6I6tm0FvkZoPbc0TeG1M7Ye7en6j0K1WQuW2HHSpPLdd_J85uYGsfRVKgOEQi02hh4iNgi0SuTjQgeU6dAbMQ=w2400" alt="Irregular Polygons" class="card-img img-responsive img-outline">
-            </div>
-          </div>
-
-          <div class="tab-pane fade" id="polyvideo" role="tabpanel" aria-labelledby="polyvideo-tab">
-            <p class="card-text">Watch the video below to find out more about regular and irregular polygons!</p>
-            <iframe src="https://www.youtube.com/embed/UeKN5-ogFTs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<br>
-
 <div class="container">
   <div row="col-12">
-    <h2>Types of Polygons</h2>
-    <div id="geometrysubjects" role="tablist" aria-multiselectable="true">
-
-      <div class="card">
-          <div class="card-header" role="tab" id="trianglesheading">
-            <h3 class="mb-0">
-              <a data-toggle="collapse" data-parent="geometrysubjects" href="#triangles" area-expanded="true"
-              aria-controls="triangles">Triangles</a>
-            </h3>
-          </div>
-          <div id="triangles" class="collapse"
-            role="tabpanel" aria-labelledby="trianglesheading">
-            <div class="card-block">
-              <p class="card-body card-text">Text text text</p>
-            </div>
-          </div>
-      </div>
-
-      <div class="card">
-          <div class="card-header" role="tab" id="quadrilateralsheading">
-            <h3 class="mb-0">
-              <a data-toggle="collapse" data-parent="geometrysubjects" href="#quadrilaterals" area-expanded="true"
-              aria-controls="quadrilaterals">Quadrilaterals</a>
-            </h3>
-          </div>
-          <div id="quadrilaterals" class="collapse"
-            role="tabpanel" aria-labelledby="quadrilateralsheading">
-            <div class="card-block">
-              <p class="card-body card-text">Text text text</p>
-            </div>
-          </div>
-      </div>
-
-      <div class="card">
-          <div class="card-header" role="tab" id="pentagonheading">
-            <h3 class="mb-0">
-              <a data-toggle="collapse" data-parent="geometrysubjects" href="#pentagons" area-expanded="false"
-              aria-controls="pentagons">Pentagons</a>
-            </h3>
-          </div>
-          <div id="pentagons" class="collapse"
-            role="tabpanel" aria-labelledby="pentagonheading">
-            <div class="card-block card-body">
-              <p class="card-text">Text text text</p>
-            </div>
-          </div>
-      </div>
-
-    </div>
+    <geometry></geometry>
   </div>
 </div>
-
-<br>
 
 <div class="container">
   <div row="col-12">
@@ -196,6 +84,8 @@
   </div>
 </div>
 
+  <script src="./tags/geometry.tag" type="riot/tag"></script>
+  <script src="./tags/triangle.tag" type="riot/tag"></script>
   <script src="./tags/drag-drop.tag" type="riot/tag"></script>
   <script src="./tags/multiplechoice1.tag" type="riot/tag"></script>
 

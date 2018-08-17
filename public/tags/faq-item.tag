@@ -10,8 +10,8 @@
         <div class="card-footer">
           <h5 class="card-text"> Was this answer helpful? </h5>
 
-          <button type="button" class="card-btn btn-success" onclick={ increaseNumber }>Like</button>
-          <button type="button" class="card-btn btn-danger" onclick={ decreaseNumber }>Dislike</button>
+          <button type="button" class="card-btn btn-success" onclick={ increaseNumber } ref="likes">Like</button>
+          <button type="button" class="card-btn btn-danger" onclick={ decreaseNumber } ref="dislikes">Dislike</button>
           <button type="button" class="card-btn btn-primary" onclick={ reset }>Reset</button>
 
           <p class="card-text"> Likes = { likes } Dislikes = { dislikes } </p>

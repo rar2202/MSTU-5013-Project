@@ -41,10 +41,7 @@
                     <a href="FAQ.html"> "FAQ"</a> tab, which allows for parents to look at frequently asked questions, as well as add questions of their own.
                   </li>
                   <li class="card-text">
-                    <a href="contact.html"> "Contact"</a> tab, which allows for parents to send questions or comments in a private enviornment.
-                  </li>
-                  <li class="card-text">
-                    <a href="map.html"> "Map"</a> tab, which allows for parents to see where the location of RRMB Inc. is located.
+                    <a href="contactmap.html"> "Contact"</a> tab, which allows for parents to send questions or comments in a private enviornment and to allow for parents to see where the location of RRMB Inc. is located.
                   </li>
                 </ul>
               </p>

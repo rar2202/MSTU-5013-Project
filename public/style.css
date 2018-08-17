@@ -35,3 +35,11 @@ body {
 .center {
   text-align: center;
 }
+
+.text-white {
+  color: #FFFFFF;
+}
+
+.outline-white {
+  outline: #FFFFFF;
+}

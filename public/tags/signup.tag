@@ -29,6 +29,8 @@
     this.submitINFO = function(event) {
       console.log('submitted');
 
+      alert('Submitted.');
+
       var database = firebase.database();
 
       var firstname1 = this.refs.firstname1.value; // get from input

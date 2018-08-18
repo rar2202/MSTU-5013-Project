@@ -1,10 +1,21 @@
-# MSTU 5013 Project
+# MSTU-5013-Project
+
 By: Becca Rosenberg and Mary Babin
 
- Description: A "teacher-maintained" website that is designed for students and parents to better understand concepts that their children are learning in school. The website has three main objectives:
- 
- 1) To provide information, practice problems, and helpful links for students and parents for each math unit.
+Description: A "teacher-maintained" website that is designed for students and parents to better understand concepts that their children are learning in school. The website has three main objectives:
 
- 2) To help children become comfortable with the types of questions they will be expected to interact with during state-wide computer-based standardized testing. Practice questions will be formatted using a game-like structure so children are exposed to academic content while also having fun.
+To provide information, practice problems, and helpful links for students and parents for each math unit.
 
- 3) To provide parents with an FAQ resource where they can look up frequently asked questions, as well as ask their own.
+To help children become comfortable with the types of questions they will be expected to interact with during state-wide computer-based standardized testing. Practice questions will be formatted using a game-like structure so children are exposed to academic content while also having fun.
+
+To provide parents with an FAQ resource where they can look up frequently asked questions, as well as ask their own.
+
+Github Demonstration Page: https://github.com/rar2202/MSTU-5013-Project
+
+Firebase Project Console: https://console.firebase.google.com/project/mstu5013project2018/overview
+
+Hosting URL: https://mstu5013project2018.firebaseapp.com
+
+Becca's YouTube Video: https://youtu.be/ucMFojttvgE
+
+Mary's YouTube Video: https://youtu.be/ZTDXNbS5wIQ

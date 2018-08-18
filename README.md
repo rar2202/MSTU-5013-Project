@@ -16,6 +16,6 @@ Firebase Project Console: https://console.firebase.google.com/project/mstu5013pr
 
 Hosting URL: https://mstu5013project2018.firebaseapp.com
 
-Becca's YouTube Video: #
+Becca's YouTube Video: https://youtu.be/ucMFojttvgE
 
 Mary's YouTube Video: https://youtu.be/ZTDXNbS5wIQ
